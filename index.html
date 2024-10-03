@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="dessert">
+        <h1 class="dessertTitle">Desserts</h1>
+        <div class="items"></div>
+      </section>
+      <div class="cart">
+        <h3 class="cartTitle">
+          Your Cart (<span class="totalQuantity">0</span>)
+        </h3>
+        <div class="orders">
+          <div class="footer-cart">
+            <div class="final-total">
+              <p>Order Total</p>
+              <p class="total"></p>
+            </div>
+            <div class="carbon">
+              <img src="" alt="" />
+              This is a carbon-neutral delivery
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
