@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/script.js"></script>
+
+  <script defer src="script.js"></script>
+
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay hidden"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal__contents">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="">
+      <div class="modal__heading-container">
+        <h2 class="fs-600 fc-900">Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+      </div>
+      <div class="modal__items-container">
+        <div id="modal-list" class="modal__items-list">
+        </div>
+        <div id="modal-price" class="modal__items-price">
+        </div>
+      </div>
+      <button id="new-order-button" class="button button--new-order">Start New Order</button>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="main-grid grid">
+    <div class="main-grid__left-column">
+      <h1 class="main-heading">Desserts</h1>
+      <div id="shop" class="menu-grid grid">
+      </div>
+    </div>
+
+    <div class="main-grid__right-column">
+      <div class="your-cart">
+        <h2 class="secondary-heading">Your Cart (<span id="cart-item-count" class="your-cart__num-items-basket">0</span>)</h2>
+        <div class="your-cart__empty-cart">
+          <img class="empty-cart__img" src="./assets/images/illustration-empty-cart.svg" alt="">
+          <p class="empty-cart__text">Your added items will appear here</p>
+        </div>
+        <div id="cart" class="your-cart__cart-items">
+
+        </div>
+        <div class="your-cart__order-details-container hidden">
+          <div class="your-cart__order-total-container flex">
+            <span class="your-cart__order-total-text">Order Total</span>
+            <span id="order-total" class="your-cart__order-total-value"><span>$</span></span>
+          </div>
+          <div class="your-cart__carbon-container flex">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+            <span class="your-cart__carbon-text">This is a <span class="your-cart__carbon-bold">carbon-neutral</span> delivery</span>
+          </div>
+          <button id="confirm-order" class="button button--confirm-order">Confirm Order</button>
+        </div>
+        
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
